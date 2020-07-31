@@ -178,7 +178,7 @@ extension VoiceActivityDetector {
     }
 
     let sampleBytes = CMSampleBufferGetSampleSize(sampleBuffer, at: 0)
-    assert(sampleBytes == 2, "Invalid sample format")
+    //assert(sampleBytes == 2, "Invalid sample format")
 
     let offsetBytes = (offset == 0) ? 0 : (offset * _sampleRate * sampleBytes / 1000)
     var bufferBytes = 0
