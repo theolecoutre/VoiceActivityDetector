@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.author           = { 'reedom' => 'tohru@reedom.com' }
   s.source           = { :git => 'https://github.com/reedom/VoiceActivityDetector.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.15'
   s.swift_version = "5.0"
   s.source_files = 'VoiceActivityDetector/Classes/**/*'
   s.dependency 'libfvad', '~> 0.1.0'
